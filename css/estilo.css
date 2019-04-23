@@ -1,0 +1,18 @@
+body{
+	background-color: deepSkyBlue; 
+	font-weight: 800;
+	text-align: center;
+	background-image: url(../imagens/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+h1,h2,p{
+    color: blue;
+
+}
+
+.img{
+	height: 40%;
+	width: 40%;
+}
