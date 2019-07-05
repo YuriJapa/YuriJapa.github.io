@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Javascript World</title>
+    <style>
+        body{
+            background-color: darkgreen;
+            color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        //Comentário de uma linha
+        /***  
+            Comentario de Múltiplas linhas
+            O comando abaixo só é visto no console
+            do navegador
+        ***/
+        console.log("Alo Ha Mundo Javascript");
+        // Abre uma tabela e exibe o conteúdo!
+        // alert("Saudades do Sublime");
+        // Garante que só será executado após carregar todos
+        // elementos HTML
+        window.onload = function(){
+            document.querySelector("h1").textContent = "JS é massa";
+
+            // Elemento HTML em uma variável Javascript
+            var paçoca = document.querySelector("h1");
+            paçoca.innerHTML = "<em>JS</em> não é Java!";
+            paçoca.style = "font-size: 50px; \
+                            color: deepSkyBlue;";//Saudades
+
+            // Variável moderna local
+            let h1_2 = document.querySelector(".segundoH1");
+            let h1_3 = document.querySelector("#terceiroH1");
+
+            h1_2.style = "font-size: 10px";
+            h1_3.style = "text-shadow: 3px 3px 5px black";
+
+            let h_uns = document.querySelectorAll("h1");
+                
+            for(let i=0; i < h_uns.length; i++)
+                h_uns[i].style = "border: 2px dashed black";
+           }
+
+           // JS Variables
+           // https://www.w3schools.com/js/exercise_js.asp
+           var carName = "Volvo";
+           var x = 50;
+
+           
+
+    </script>
+
+    <h1>Intrdoção à Linguagem Javascript</h1>
+    <h1 class="segundoH1">Segundo H1</h1>
+    <h1 id="terceiroH1">Terceiro H1</h1>
+
+    <div style="text-align: center; background-color: darkgreen;">
+        <h2>Exemplo da Lâmpada</h2>
+        <button onclick="document.querySelector('#Lâmpada').src = 'acesa.jpg'">
+            Acender</button>
+        <img src="apagada.jpg" id="Lâmpada"
+            onmouseover = "acender()" onmouseout = "apagar()">
+        <button onclick="document.querySelector('#Lâmpada').src = 'apagada.jpg'">
+            Apagar</button>
+    </div>
+
+        <script>
+            var lâmpada = document.querySelector("#Lâmpada");
+            function acender(){lâmpada.src = "acesa.jpg"}
+            function apagar(){lâmpada.src = "apagada.jpg"}
+        </script>
+
+</body>
+</html>
