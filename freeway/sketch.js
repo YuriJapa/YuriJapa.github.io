@@ -34,7 +34,6 @@ function vacaVencedora(){
 }
 
 function touroVencedor(){
-  vitoria.play();
   background("Turquoise");
   textStyle(BOLD);
   textAlign(CENTER);
