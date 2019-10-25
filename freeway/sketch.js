@@ -23,7 +23,6 @@ function verificaVencedor(){
 }
 
 function vacaVencedora(){
-  vitoria.play();
   background("Cian");
   textStyle(BOLD);
   textAlign(CENTER);
